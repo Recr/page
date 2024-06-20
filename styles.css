@@ -2,6 +2,41 @@ body {
     background-color: #2f2b2b;
 }
 .menu > span {
-    color: #524d4d;
+    color: #867e7e;
     
+}
+
+#welcome {
+    font-size: 100px;
+    margin-bottom: 0;
+    margin-left: 100px;
+}
+
+#text {
+    font-size: 40px;
+    margin-top: 0;
+    margin-left: 100px;
+    width: 800px;
+}
+
+.main-text > hr{
+    margin-left: 100px;
+    width: 800px;
+    
+}
+
+.main-text > p {
+    color: #c8bab1;
+} 
+
+#logo {
+    color: #fff;
+    font-size: 30px;
+    margin-right: 600px;
+}
+
+.nav-icon {
+    color: #c8bab1;
+    font-size: large;
+    margin: 25px;
 }
