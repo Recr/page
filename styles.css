@@ -1,22 +1,42 @@
 body {
-    background-color: #2f2b2b;
+    background-color: #dbd9d4;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.menu > span {
-    color: #867e7e;
-    
+
+nav {
+    width: 100vw;
+}
+
+nav img {
+}
+nav ul{
+    list-style: none;
+}
+
+nav li {
+    float: right;
+}
+
+#logo-image {
+    width: 15vw;
+    margin: 0;
 }
 
 #welcome {
-    font-size: 100px;
+    margin-top: 100px;
+    font-size: 70px;
     margin-bottom: 0;
     margin-left: 100px;
+    color: #5b3b37;
 }
 
 #text {
-    font-size: 40px;
+    font-size: 20px;
     margin-top: 0;
     margin-left: 100px;
     width: 800px;
+    text-align: justify;
 }
 
 .main-text > hr{
@@ -26,7 +46,7 @@ body {
 }
 
 .main-text > p {
-    color: #c8bab1;
+    color: #272936;
 } 
 
 #logo {
@@ -36,7 +56,7 @@ body {
 }
 
 .nav-icon {
-    color: #c8bab1;
+    color: #5b3b37;
     font-size: large;
     margin: 25px;
 }
