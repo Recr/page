@@ -1,49 +1,65 @@
 body {
     background-color: #dbd9d4;
     margin: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
-nav {
-    width: 100vw;
-}
-
-nav img {
-}
-nav ul{
+nav li{
     list-style: none;
 }
 
-nav li {
-    float: right;
+nav a {
+    margin-top: 30px;
+    margin-right: 50px;
+}
+
+a:hover, #logo-image:hover {
+    cursor: pointer;
 }
 
 #logo-image {
     width: 15vw;
-    margin: 0;
+}
+
+.nav-left {
+    float: left;
+}
+.nav-right {
+    float: right;
+}
+
+.clear {
+    clear: both;
 }
 
 #welcome {
-    margin-top: 100px;
-    font-size: 70px;
-    margin-bottom: 0;
-    margin-left: 100px;
+    /* margin-top: 500px; */
+    /* margin-bottom: 0; */
+    /* margin-left: 100px; */
+    width: 1200px;
+    font-size: 60px;
     color: #5b3b37;
+    font-weight: 600;
+    text-transform: uppercase;
+    /* width: auto;*/
+    text-align: center;
+    margin: auto;
 }
 
 #text {
-    font-size: 20px;
-    margin-top: 0;
-    margin-left: 100px;
-    width: 800px;
+    font-size: 22px;
+    /* margin-top: 0;
+    margin-left: 100px; */
+    width: 1200px;
     text-align: justify;
+    margin: auto;
 }
 
-.main-text > hr{
-    margin-left: 100px;
-    width: 800px;
-    
+hr{
+    /* margin-left: 100px; */
+    width: 1200px;
 }
+
 
 .main-text > p {
     color: #272936;
@@ -56,6 +72,7 @@ nav li {
 }
 
 .nav-icon {
+    float: right;
     color: #5b3b37;
     font-size: large;
     margin: 25px;
