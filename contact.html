@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/styles/contact-styles.css">
+
+    <title>Contact</title>
+</head>
+<body>
+    <nav>
+        <a class="nav-left" href="index.html">
+            <img id="logo-image" src="assets/images/logo.png" alt="Forth brand logo">
+        </a>
+        <ul>
+            <!-- <li><a class="nav-right" href="">About</a></li> -->
+            <li><a class="nav-right" href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="clear"></div>
+
+    <div class="main-text">
+        <p class="large-text">Talk with us</p>
+    </div>
+
+    <form id="contactForm">
+        <label for="form" id="caption">Get in touch</label>
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" class="field" placeholder="Your first name...">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" class="field" placeholder="Your last name...">
+        <label for="country">Country</label>
+        <select name="country" id="country" class="field">
+            <option value="australia">Australia</option>
+            <option value="brazil">Brazil</option>
+            <option value="canada">Canada</option>
+            <option value="china">China</option>
+            <option value="france">France</option>
+            <option value="germany">Germany</option>
+            <option value="india">India</option>
+            <option value="indonesia">Indonesia</option>
+            <option value="italy">Italy</option>
+            <option value="japan">Japan</option>
+            <option value="mexico">Mexico</option>
+            <option value="netherlands">Netherlands</option>
+            <option value="new-zealand">New Zealand</option>
+            <option value="russia">Russia</option>
+            <option value="saudi-arabia">Saudi Arabia</option>
+            <option value="south-africa">South Africa</option>
+            <option value="south-korea">South Korea</option>
+            <option value="spain">Spain</option>
+            <option value="sweden">Sweden</option>
+            <option value="switzerland">Switzerland</option>
+            <option value="united-kingdom">United Kingdom</option>
+            <option value="united-states">United States</option>
+        </select>
+        <label for="email">E-mail</label>
+        <input type="text" id="email" placeholder="Your e-mail..." class="field">
+        <label for="message">Message</label>
+        <textarea name="message" id="message" class="field" placeholder="Type your message..."></textarea>
+        <button id="btn" type="submit" onclick="">Submit</button>
+    </form>
+
+    <script src="assets/scripts/script.js"></script>
+</body>
+</html>

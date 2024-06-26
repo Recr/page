@@ -1,0 +1,137 @@
+body {
+    background-color: #dbd9d4;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.c1 {
+    color: #C95A3D;
+}
+
+.c2 {
+    color: #4F3635;
+    font-weight: 600;
+}
+
+.c3 {
+    color: #272835;
+}
+
+.c4 {
+    color: #9F513A;
+}
+
+
+
+nav li{
+    list-style: none;
+    font-size: 20px;
+    font-weight: 600;
+    
+}
+
+nav ul a {
+    margin-top: 30px;
+    margin-right: 50px;
+    color: #4F3635;
+    text-decoration: none;
+}
+
+a:hover, #logo-image:hover {
+    cursor: pointer;
+}
+
+#logo-image{
+    width: 15vw;
+}
+
+.nav-left {
+    float: left;
+}
+.nav-right {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+.large-text {
+    width: 1200px;
+    font-size: 60px;
+    color: #272835;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+form {
+    border-radius: 20px;
+    text-align: center;
+    width: 500px;
+    height: 650px;
+    padding-top: 30px;
+    margin: 0 auto;
+    background: #4F3635;
+}
+
+form * {
+    display: block;
+    margin: 0 auto;
+}
+
+#caption {
+    font-size: 30px;
+}
+
+form label {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 15px 0;
+    color: #dbd9d4;
+    text-transform: uppercase;
+}
+
+.field {
+    width: 300px;
+    height: 40px;
+    background-color: #cfcfcf;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 15px;
+    padding-left: 15px;
+}
+::placeholder {
+    text-align: center;
+}
+
+#country {
+    text-align: center;
+    width: 315px;
+    
+}
+
+#message {
+    height: 100px;
+    resize: none;
+}
+
+#btn {
+    margin-top: 20px;
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: #C95A3D;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #cfcfcf;
+}
+
+#btn:hover{
+    cursor: pointer;
+}
