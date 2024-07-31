@@ -1,39 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="assets/styles/styles.css">
+        <!-- Styles -->
+        <link rel="stylesheet" href="assets/styles/index-styles.css">
 
-    <title>Forth</title>
-</head>
-<body>
-    <nav>
-        <a class="nav-left"  href="index.html">
-            <img id="logo-image" src="assets/images/logo.png" alt="Forth brand logo">
-        </a>
-        <ul>
-            <!-- <li><a class="nav-right" href="">About</a></li> -->
-            <li><a class="nav-right" href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+        <title>Forth</title>
+    </head>
+    <body>
+        <div id="menu" onclick="changeIcon()"></div>
+        <nav id="navbar">
+            <li class="nav-left tab" >
+                <a href="index.html"><img id="logo-image" src="assets/images/logo.png" alt="Forth brand logo"></a>
+            </li>
+            <li class="nav-item tab invisible">
+                <a href="about.html">About</a>
+            </li>
+            <li class="nav-item tab invisible">
+                <a href="products.html">Products</a>
+            </li>
+            <li class="tab nav-item invisible">
+                <a href="contact.html">Contact</a>
+            </li>
+        </nav>
 
-    <div class="clear"></div>
-
-    <div class="main-text">
-        <p class="large-text">Unleash Your <span class="c2">Style</span> with <span class="c4">Forth</span></p>
-        <img id="clothes-image" src="assets/images/clothes.jpg" alt="clothes">
-        <hr>
-        <p id="text"><span class="c2">Forth</span> blends timeless <span class="c2">elegance</span> with contemporary trends, offering <span class="c2">quality clothing</span> for those who dare to stand out and <span class="c2">express</span> their<span class="c2"> unique style</span> confidently. <span class="c2">Discover</span> pieces that <span class="c2">elevate</span> your wardrobe and <span class="c2">lifestyle</span>.</p>
-        <hr>
-    </div>
+        <div>
+            <p class="large-text">Unleash Your
+                <span class="c2">Style</span>
+                with
+                <span class="c4">Forth</span>
+            </p>
+            <img id="clothes-image" src="assets/images/clothes.jpg" alt="clothes">
+            <hr>
+            <p id="text">
+                <span class="c2">Forth</span>
+                blends timeless
+                <span class="c2">elegance</span>
+                with contemporary trends, offering
+                <span class="c2">quality clothing</span>
+                for those who dare to stand out and
+                <span class="c2">express</span>
+                their<span class="c2">
+                    unique style</span>
+                confidently.
+                <span class="c2">Discover</span>
+                pieces that
+                <span class="c2">elevate</span>
+                your wardrobe and
+                <span class="c2">lifestyle</span>.</p>
+            <hr>
+        </div>
 
     <p class="large-text">Our products</p>
     <hr id="products-hr">
@@ -50,12 +75,11 @@
         </div>
     </div>
 
-
-        <footer>
-            <span class="social">GitHub</span>
-            <span class="social">LinkedIn</span>
-        </footer>
-    
-    
+    <footer>
+        <span class="social">GitHub</span>
+        <span class="social">LinkedIn</span>
+        ícones por <a target="_blank" href="https://icons8.com">Icons8</a>
+    </footer>
+    <script src="assets/scripts/index-script.js"></script>
 </body>
 </html>
