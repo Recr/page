@@ -1,18 +1,19 @@
 function changeIcon() {
     let menu = document.getElementById("menu");
+    let navBar = document.getElementById("navbar")
     if (menu.classList.contains("colapsed")) {
         menu.classList.remove("colapsed");
-        let navItem = document.getElementsByClassName("nav-item");
-        for (let i = 0; i < navItem.length; i++) {
-            navItem[i].classList.add("invisible"); 
+        navBar.classList.add("invisible");
+        let navItems = document.getElementsByClassName("nav-item");
+        for (let i = 0; i < navItems.length; i++) {
+            navItems[i].classList.add("invisible"); 
         }
     } else {
         menu.classList.add("colapsed");
-        let navItem = document.getElementsByClassName("nav-item");
-        console.log(navItem)
-        for (let i = 0; i < navItem.length; i++) {
-            console.log(navItem[i])
-            navItem[i].classList.remove("invisible");
+        navBar.classList.remove("invisible");
+        let navItems = document.getElementsByClassName("nav-item");
+        for (let i = 0; i < navItems.length; i++) {
+            navItems[i].classList.remove("invisible");
         }
     }
 }

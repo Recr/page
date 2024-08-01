@@ -18,30 +18,27 @@
     </head>
     <body>
         <div id="menu" onclick="changeIcon()"></div>
-        <nav id="navbar">
-            <li class="nav-left tab" >
-                <a href="index.html"><img id="logo-image" src="assets/images/logo.png" alt="Forth brand logo"></a>
-            </li>
-            <li class="nav-item tab invisible">
+        <nav id="navbar" class="invisible">
+            <li class="nav-item invisible">
                 <a href="about.html">About</a>
             </li>
-            <li class="nav-item tab invisible">
+            <li class="nav-item invisible">
                 <a href="products.html">Products</a>
             </li>
-            <li class="tab nav-item invisible">
+            <li class="nav-item invisible">
                 <a href="contact.html">Contact</a>
             </li>
         </nav>
 
         <div>
-            <p class="large-text">Unleash Your
+            <p class="text" id="large-text">Unleash Your
                 <span class="c2">Style</span>
                 with
                 <span class="c4">Forth</span>
             </p>
             <img id="clothes-image" src="assets/images/clothes.jpg" alt="clothes">
             <hr>
-            <p id="text">
+            <p class="text">
                 <span class="c2">Forth</span>
                 blends timeless
                 <span class="c2">elegance</span>
@@ -60,18 +57,21 @@
             <hr>
         </div>
 
-    <p class="large-text">Our products</p>
+    <p class="text" id="large-text">Our products</p>
     <hr id="products-hr">
 
-    <div class="products">
+    <div id="products">
         <div class="product">
-            <img src="assets/images/man.jpg" alt="man wearing stylish clothes">
+            <p>Stylish</p>
+            <a href="products.html"><img src="assets/images/man.jpg" alt="man wearing stylish clothes"></a>
         </div>
         <div class="product">
-            <img src="assets/images/man-social.jpg" alt="man wearing social clothes">
+            <p>Social</p>
+            <a href="products.html"><img src="assets/images/man-social.jpg" alt="man wearing social clothes"></a>
         </div>
         <div class="product">
-            <img src="assets/images/woman-casual.jpg" alt="woman wearing casual clothes">
+            <p>Casual</p>
+            <a href="products.html"><img src="assets/images/woman-casual.jpg" alt="woman wearing casual clothes"></a>
         </div>
     </div>
 
