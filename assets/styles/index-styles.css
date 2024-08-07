@@ -43,9 +43,6 @@ a {
 }
 */
 
-.nav-left {
-    width: 100%;
-}
 
 .nav-item a{
     color: #dbd9d4;
@@ -122,10 +119,226 @@ footer > span{
         border-radius: 0 10px 10px 0;
         z-index: 1;
     }
+
+    #nav-logo-img {
+        display: none;
+    }
+
     .nav-item {
         display: flex;
+        justify-content: center;
         margin: 20px;
+    }
 
+    .invisible {
+        display: none;
+    }
+
+    #logo{
+        width: 100%;
+    }
+
+    .text {
+        font-size: 25px;
+        text-align: justify;
+        margin: auto;
+        width: 80%;
+    }
+
+    #large-text {
+        font-size: 3rem;
+        color: #272835;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 50px auto;
+        position: relative;
+    }
+
+    #clothes-image {
+        width: 90%;
+        height: 600px;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 100px;
+        border-radius: 20px;
+    }
+    
+    #products {
+        text-align: center;
+    }
+    
+    .product {
+        margin: 50px auto;
+    }
+    
+    .product > p {
+        font-size: 1.7rem;
+        font-weight: 600;
+        letter-spacing: 0.25rem;
+        margin-bottom: 10px;
+    }
+
+    .product img {
+        width: 80%;
+        transition: 0.5s;
+        opacity: 1;
+        border-radius: 20px;
+    }
+    
+    .product:hover img{
+        transition: 0.5s;
+        opacity: 0.3;
+    }
+}
+
+/*Small devices*/
+@media only screen and (min-width: 600px) {
+    #menu {
+        background: url(../images/icons8-cardápio-24.png) no-repeat center;
+        width: 40px;
+        height: 40px;
+        margin: 20px;
+        position: fixed;
+        z-index: 2;
+    }
+    
+    #menu:hover {
+        rotate: 360deg;
+        cursor: pointer;
+        transition: 500ms;
+    }
+
+    .colapsed {
+        background: url(../images/icons8-back-32.png) no-repeat center !important;
+    }
+
+    #navbar {
+        height: 60%;
+        padding-top: 70px;
+        position: fixed;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.418);
+        border-radius: 0 10px 10px 0;
+        z-index: 1;
+    }
+    #nav-logo-img {
+        display: none;
+    }
+    .nav-item {
+        display: flex;
+        justify-content: center;
+        margin: 80px 20px;
+        font-size: 18px;
+    }
+
+    .invisible {
+        display: none;
+    }
+
+    #logo{
+        width: 100%;
+    }
+
+    .text {
+        font-size: 25px;
+        text-align: justify;
+        margin: auto;
+        width: 80%;
+    }
+
+    #large-text {
+        font-size: 3rem;
+        color: #272835;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        position: relative;
+    }
+
+    #clothes-image {
+        width: 90%;
+        height: 600px;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 100px;
+        border-radius: 20px;
+    }
+    
+    #products {
+        text-align: center;
+    }
+    
+    .product {
+        margin: 50px auto;
+    }
+    
+    .product > p {
+        font-size: 1.7rem;
+        font-weight: 600;
+        letter-spacing: 0.25rem;
+        margin-bottom: 10px;
+    }
+
+    .product img {
+        width: 80%;
+        transition: 0.5s;
+        opacity: 1;
+        border-radius: 20px;
+    }
+    
+    .product:hover img{
+        transition: 0.5s;
+        opacity: 0.3;
+    }
+
+}
+
+/*Medium devices*/
+@media only screen and (min-width: 768px) {
+    #menu {
+        background: url(../images/icons8-cardápio-24.png) no-repeat center;
+        width: 70px;
+        height: 70px;
+        margin: 20px;
+        position: fixed;
+        z-index: 2;
+    }
+    
+    #menu:hover {
+        rotate: 360deg;
+        cursor: pointer;
+        transition: 500ms;
+    }
+
+    .colapsed {
+        background: url(../images/icons8-back-32.png) no-repeat center !important;
+    }
+
+    #navbar {
+        height: 60%;
+        width: 30%;
+        padding-top: 70px;
+        position: fixed;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.418);
+        border-radius: 0 10px 10px 0;
+        z-index: 1;
+    }
+    
+    .nav-item {
+        display: flex;
+        justify-content: center;
+        margin: 80px 20px;
+        font-size: 28px;
     }
 
     .invisible {
@@ -194,18 +407,108 @@ footer > span{
     }
 }
 
-/*Small devices*/
-@media only screen and (min-width: 600px) {
-
-}
-
-/*Medium devices*/
-@media only screen and (min-width: 768px) {
-
-}
-
 /*Large devices*/
 @media only screen and (min-width: 992px) {
+    #menu {
+        display: none;
+    }
+
+    #navbar {
+        height: 10;
+        width: 100%;
+        padding-top: 0;
+        position: relative;
+        text-align: center;
+        background-color: initial;
+        border-radius: 0 0 10px 10px;
+        z-index: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #nav-logo-img {
+        display: initial;
+        width: 250px;
+    }
+
+    .nav-item {
+        margin: 0 20px 0px 0;
+        font-size: 28px;
+    }
+
+    .nav-item a {
+        color: #4F3635;
+    }
+
+    .invisible {
+        display: initial;
+    }
+
+    #logo{
+        width: 100%;
+        display: none;
+    }
+
+    .text {
+        font-size: 25px;
+        text-align: justify;
+        margin: auto;
+        width: 80%;
+    }
+
+    #large-text {
+        font-size: 3rem;
+        color: #272835;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        position: relative;
+    }
+
+    #clothes-image {
+        width: 90%;
+        height: 600px;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 100px;
+        border-radius: 20px;
+    }
+    
+    #products {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    
+    .product {
+        margin: 50px 10px;
+    }
+    
+    .product > p {
+        font-size: 1.7rem;
+        font-weight: 600;
+        letter-spacing: 0.25rem;
+        margin-bottom: 10px;
+    }
+
+    .product img {
+        width: 28vw;
+        transition: 0.5s;
+        opacity: 1;
+        border-radius: 20px;
+    }
+    
+    .product:hover img{
+        transition: 0.5s;
+        opacity: 0.3;
+    }
 
 }
 
