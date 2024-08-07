@@ -68,6 +68,19 @@ hr {
     margin: auto;
 }
 
+footer > span{
+    display: flex;
+    justify-content: center;
+}
+
+#social{
+    display: flex;
+    justify-content: center;
+}
+
+#social > span { 
+    margin: 0 10px;
+}
 
 
 /*Extra small devices*/
