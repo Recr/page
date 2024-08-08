@@ -126,62 +126,6 @@ footer > span{
     #logo{
         width: 100%;
     }
-
-    .text {
-        font-size: 25px;
-        text-align: justify;
-        margin: auto;
-        width: 80%;
-    }
-
-    #large-text {
-        font-size: 3rem;
-        color: #272835;
-        font-weight: 600;
-        text-transform: uppercase;
-        text-align: center;
-        margin: 50px auto;
-        position: relative;
-    }
-
-    #clothes-image {
-        width: 90%;
-        height: 600px;
-        object-fit: cover;
-        object-position: center;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 100px;
-        border-radius: 20px;
-    }
-    
-    #products {
-        text-align: center;
-    }
-    
-    .product {
-        margin: 50px auto;
-    }
-    
-    .product > p {
-        font-size: 1.7rem;
-        font-weight: 600;
-        letter-spacing: 0.25rem;
-        margin-bottom: 10px;
-    }
-
-    .product img {
-        width: 80%;
-        transition: 0.5s;
-        opacity: 1;
-        border-radius: 20px;
-    }
-    
-    .product:hover img{
-        transition: 0.5s;
-        opacity: 0.3;
-    }
 }
 
 /*Small devices*/
@@ -231,64 +175,6 @@ footer > span{
     #logo{
         width: 100%;
     }
-
-    .text {
-        font-size: 25px;
-        text-align: justify;
-        margin: auto;
-        width: 80%;
-    }
-
-    #large-text {
-        font-size: 3rem;
-        color: #272835;
-        font-weight: 600;
-        text-transform: uppercase;
-        text-align: center;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        position: relative;
-    }
-
-    #clothes-image {
-        width: 90%;
-        height: 600px;
-        object-fit: cover;
-        object-position: center;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 100px;
-        border-radius: 20px;
-    }
-    
-    #products {
-        text-align: center;
-    }
-    
-    .product {
-        margin: 50px auto;
-    }
-    
-    .product > p {
-        font-size: 1.7rem;
-        font-weight: 600;
-        letter-spacing: 0.25rem;
-        margin-bottom: 10px;
-    }
-
-    .product img {
-        width: 80%;
-        transition: 0.5s;
-        opacity: 1;
-        border-radius: 20px;
-    }
-    
-    .product:hover img{
-        transition: 0.5s;
-        opacity: 0.3;
-    }
-
 }
 
 /*Medium devices*/
@@ -337,63 +223,6 @@ footer > span{
     #logo{
         width: 100%;
     }
-
-    .text {
-        font-size: 25px;
-        text-align: justify;
-        margin: auto;
-        width: 80%;
-    }
-
-    #large-text {
-        font-size: 3rem;
-        color: #272835;
-        font-weight: 600;
-        text-transform: uppercase;
-        text-align: center;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        position: relative;
-    }
-
-    #clothes-image {
-        width: 90%;
-        height: 600px;
-        object-fit: cover;
-        object-position: center;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 100px;
-        border-radius: 20px;
-    }
-    
-    #products {
-        text-align: center;
-    }
-    
-    .product {
-        margin: 50px auto;
-    }
-    
-    .product > p {
-        font-size: 1.7rem;
-        font-weight: 600;
-        letter-spacing: 0.25rem;
-        margin-bottom: 10px;
-    }
-
-    .product img {
-        width: 80%;
-        transition: 0.5s;
-        opacity: 1;
-        border-radius: 20px;
-    }
-    
-    .product:hover img{
-        transition: 0.5s;
-        opacity: 0.3;
-    }
 }
 
 /*Large devices*/
@@ -438,67 +267,6 @@ footer > span{
         width: 100%;
         display: none;
     }
-
-    .text {
-        font-size: 25px;
-        text-align: justify;
-        margin: auto;
-        width: 80%;
-    }
-
-    #large-text {
-        font-size: 3rem;
-        color: #272835;
-        font-weight: 600;
-        text-transform: uppercase;
-        text-align: center;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        position: relative;
-    }
-
-    #clothes-image {
-        width: 90%;
-        height: 600px;
-        object-fit: cover;
-        object-position: center;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 100px;
-        border-radius: 20px;
-    }
-    
-    #products {
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        margin: 0;
-    }
-    
-    .product {
-        margin: 50px 10px;
-    }
-    
-    .product > p {
-        font-size: 1.7rem;
-        font-weight: 600;
-        letter-spacing: 0.25rem;
-        margin-bottom: 10px;
-    }
-
-    .product img {
-        width: 28vw;
-        transition: 0.5s;
-        opacity: 1;
-        border-radius: 20px;
-    }
-    
-    .product:hover img{
-        transition: 0.5s;
-        opacity: 0.3;
-    }
-
 }
 
 /*Extra large devices*/
