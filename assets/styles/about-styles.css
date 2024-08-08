@@ -426,8 +426,8 @@ footer > span{
 
     .img-middle {
         border-radius: 50px;
-        width: 80%;
-        height: 1200px;
+        width: 50%;
+        height: 100vh;
         background-attachment: local;
         margin: auto;
     }

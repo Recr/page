@@ -168,7 +168,9 @@ form *, select * {
         margin: 20px;
     }
 
-
+    .invisible {
+        display: none;
+    }
 
     #logo{
         width: 100%;
