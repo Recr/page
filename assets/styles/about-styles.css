@@ -49,6 +49,14 @@ hr {
     height: 5px;
 }
 
+.large-text {
+    color: #272835;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 100px auto;
+}
+
 .main-text > p {
     color: #272936;
     margin: auto;
@@ -75,6 +83,37 @@ footer > span{
     transition: 0.5s ease;
     opacity: 0.65;
     cursor: pointer;
+}
+
+.img-container {
+    background-image: url(../images/acessories.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 600px;
+}
+
+#img-1 {
+    background-image: url(../images/blonde-girl-black-shirt.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#img-2 {
+    background-image: url(../images/girl-yellow-clothes.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#img-3 {
+    background-image: url(../images/man-jeans.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 
@@ -125,6 +164,29 @@ footer > span{
 
     #logo{
         width: 100%;
+    }
+
+    .large-text {
+        font-size: 32px;
+        width: 80%;
+        text-align: center;
+    }
+
+    section {
+        width: 80%;
+        text-align: justify;
+        margin: 50px auto;
+        font-size: 20px;
+    }
+
+    p {
+        margin: 20px 0;
+    }
+
+    .img-middle {
+        border-radius: 20px;
+        width: 100%;
+        height: 550px;
     }
 }
 
