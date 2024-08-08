@@ -399,7 +399,35 @@ footer > span{
     .img-middle {
         border-radius: 50px;
         width: 80%;
-        height: 800px;
+        height: 940px;
+        background-attachment: local;
+        margin: auto;
+    }
+}
+
+/*Extra large devices*/
+@media only screen and (min-width: 1200px) {
+    .large-text {
+        font-size: 50px;
+        width: 80%;
+        text-align: center;
+    }
+
+    section {
+        width: 80%;
+        text-align: justify;
+        margin: 50px auto;
+        font-size: 25px;
+    }
+
+    p {
+        margin: 50px 0;
+    }
+
+    .img-middle {
+        border-radius: 50px;
+        width: 80%;
+        height: 1200px;
         background-attachment: local;
         margin: auto;
     }
