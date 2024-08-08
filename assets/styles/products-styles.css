@@ -77,55 +77,6 @@ footer > span{
     cursor: pointer;
 }
 
-.large-text {
-    font-size: 60px;
-    color: #272835;
-    font-weight: 600;
-    text-transform: uppercase;
-    text-align: center;
-    margin: auto;
-}
-
-form {
-    border-radius: 20px;
-    text-align: center;
-    width: 90%;
-    padding-top: 30px;
-    margin: 50px auto;
-    background: #4F3635;
-}
-
-form *, select * {
-    display: block;
-    margin: auto;
-}
-
-
-#country {
-    text-align: center;
-}
-
-::placeholder {
-    text-align: center;
-}
-
-#btn {
-    border-radius: 20px;
-    border: none;
-    background-color: #C95A3D;
-    text-transform: uppercase;
-    font-weight: 600;
-    color: #dbd9d4;
-}
-
-#btn:hover{
-    cursor: pointer;
-    background-color: #b6391a;
-    color: #ffffff;
-}
-
-
-
 
 /*Extra small devices*/
 @media only screen and (max-width: 600px) {
@@ -175,59 +126,6 @@ form *, select * {
     #logo{
         width: 100%;
     }
-
-    .large-text {
-        width: 80%;
-    }
-    
-    form {
-        width: 90%;
-        height: 700px;
-        margin: 50px auto;
-    }
-
-    #form-caption {
-        font-size: 30px;
-        font-weight: bolder;
-    }
-    
-    form label {
-        font-size: 17px;
-        font-weight: 600;
-        margin: 15px 0;
-        color: #dbd9d4;
-        text-transform: uppercase;
-    }
-    
-    .field {
-        width: 80%;
-        height: 40px;
-        background-color: #cfcfcf;
-        margin-bottom: 10px;
-        border: none;
-        border-radius: 15px;
-        padding-left: 15px;
-    }
-
-
-    ::placeholder {
-        font-size: 15px;
-    }
-    
-    #message {
-        height: 100px;
-        resize: none;
-    }
-    
-    #btn {
-        margin-top: 30px;
-        width: 40%;
-        height: 40px;
-        font-size: 20px;
-    }
-
-
-
 }
 
 /*Small devices*/
@@ -375,5 +273,3 @@ form *, select * {
 @media only screen and (min-width: 1200px) {
 
 }
-
-
