@@ -422,6 +422,7 @@ footer > span{
     }
 
     .nav-item {
+        display: inline;
         margin: 0 20px 0px 0;
         font-size: 28px;
     }
@@ -501,7 +502,4 @@ footer > span{
 
 }
 
-/*Extra large devices*/
-@media only screen and (min-width: 1200px) {
 
-}

@@ -168,9 +168,7 @@ form *, select * {
         margin: 20px;
     }
 
-    .invisible {
-        display: none;
-    }
+
 
     #logo{
         width: 100%;
@@ -277,6 +275,57 @@ form *, select * {
     #logo{
         width: 100%;
     }
+
+    .large-text {
+        width: 80%;
+    }
+    
+    form {
+        width: 80%;
+        height: 800px;
+        margin: 50px auto;
+    }
+
+    #form-caption {
+        font-size: 30px;
+        font-weight: bolder;
+    }
+    
+    form label {
+        font-size: 17px;
+        font-weight: 600;
+        margin: 15px 0;
+        color: #dbd9d4;
+        text-transform: uppercase;
+    }
+    
+    .field {
+        width: 80%;
+        height: 60px;
+        background-color: #cfcfcf;
+        margin-bottom: 10px;
+        border: none;
+        border-radius: 15px;
+        padding-left: 15px;
+        font-size: 18px;
+    }
+
+
+    ::placeholder {
+        font-size: 18px;
+    }
+    
+    #message {
+        height: 100px;
+        resize: none;
+    }
+    
+    #btn {
+        margin-top: 30px;
+        width: 40%;
+        height: 40px;
+        font-size: 20px;
+    }
 }
 
 /*Medium devices*/
@@ -325,6 +374,58 @@ form *, select * {
     #logo{
         width: 100%;
     }
+
+
+    .large-text {
+        width: 80%;
+    }
+    
+    form {
+        width: 600px;
+        height: 800px;
+        margin: 50px auto;
+    }
+
+    #form-caption {
+        font-size: 30px;
+        font-weight: bolder;
+    }
+    
+    form label {
+        font-size: 17px;
+        font-weight: 600;
+        margin: 15px 0;
+        color: #dbd9d4;
+        text-transform: uppercase;
+    }
+    
+    .field {
+        width: 80%;
+        height: 60px;
+        background-color: #cfcfcf;
+        margin-bottom: 10px;
+        border: none;
+        border-radius: 15px;
+        padding-left: 15px;
+        font-size: 18px;
+    }
+
+
+    ::placeholder {
+        font-size: 18px;
+    }
+    
+    #message {
+        height: 100px;
+        resize: none;
+    }
+    
+    #btn {
+        margin-top: 30px;
+        width: 40%;
+        height: 40px;
+        font-size: 20px;
+    }
 }
 
 /*Large devices*/
@@ -353,6 +454,7 @@ form *, select * {
     }
 
     .nav-item {
+        display: inline;
         margin: 0 20px 0px 0;
         font-size: 28px;
     }
@@ -361,9 +463,7 @@ form *, select * {
         color: #4F3635;
     }
 
-    .invisible {
-        display: initial;
-    }
+
 
     #logo{
         width: 100%;
@@ -371,9 +471,5 @@ form *, select * {
     }
 }
 
-/*Extra large devices*/
-@media only screen and (min-width: 1200px) {
-
-}
 
 
