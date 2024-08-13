@@ -15,36 +15,99 @@
         <link rel="stylesheet" href="assets/styles/products-styles.css">
 
         <title>About Forth</title>
-    
+        <script src="assets/scripts/xmlToJson.js"></script>
 </head>
 <body>
-    <div id="menu" onclick="changeIcon()"></div>
-        
-        <nav id="navbar" class="invisible">
-                <a href="index.html">
-                    <img id="nav-logo-img" src="assets/images/logo.png" alt="logo">
-                </a>
-                <ul>
-                    <li class="nav-item invisible">
-                        <a href="about.html">About</a>
-                    </li>
-                    <li class="nav-item invisible">
-                        <a href="products.html">Products</a>
-                    </li>
-                    <li class="nav-item invisible">
-                        <a href="contact.html">Contact</a>
-                    </li>
-                </ul>
-        </nav>
 
-        <div>
-            <a href="index.html">
-                <img id="logo" src="assets/images/logo.png" alt="logo">
-            </a>
-        </div>
+    
+    <div id="menu" onclick="changeIcon()"></div>
+    
+    <nav id="navbar" class="invisible">
+        <a href="index.html">
+            <img id="nav-logo-img" src="assets/images/logo.png" alt="logo">
+        </a>
+        <ul>
+            <li id="bag" class="nav-item invisible">
+                <img src="assets/images/shopping-bag-48.png" alt="">
+                <span id="counter">0</span>
+            </li>
+            <li class="nav-item invisible">
+                <a href="about.html">About</a>
+            </li>
+            <li class="nav-item invisible">
+                <a href="products.html">Products</a>
+            </li>
+            <li class="nav-item invisible">
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <div>
+        <a href="index.html">
+            <img id="logo" src="assets/images/logo.png" alt="logo">
+        </a>
+    </div>
+    
+    <div id="product-selector">
+        <button id="casual" class="product-type">Casual</button>
+        <button id="social" class="product-type">Social</button>
+        <button id="stylish" class="product-type">Stylish</button>
+    </div>
+    
+    <div id="container">
+        
+    </div>
+
+    <dialog id="modal">
+        <img id="closeBtn" src="assets/images/close.png" alt="close button">
+        <h1>Cart</h1>
+
+    </dialog>
+
+    <script>
+        let btns = document.querySelectorAll(".product-type");
+        
+        btns.forEach(element => {
+            element.addEventListener("click", (e) => {
+                changeProducts(element.id);
+            })
+        });
+        
+        function changeProducts (productType) {
+            let xml = new XMLHttpRequest();
+            xml.open('GET', `assets/products/${productType}.html`);
+            xml.onreadystatechange = () => {
+
+                if (xml.readyState == 4 && xml.status == 200)  {
+                    document.getElementById("container").innerHTML = xml.responseText;
+    
+                } else {
+                    document.getElementById("container").innerHTML = '<div>An error ocurred. Try again later.</div>';
+                }
+            }
+            xml.send();
+        }
+
+
+        const dialog = document.querySelector("#modal");
+        const bag = document.querySelector("#bag");
+        const closeButton = document.querySelector("#closeBtn");
+
+        bag.addEventListener("click", (e) => {
+            dialog.showModal();
+        })
+
+        closeButton.addEventListener("click", (e) => {
+            dialog.close();
+        })
+
+
+    </script>
+    
         <footer>
             <span>Developed by Eliel Silva</span>
-            <div id="social">
+            <div id="social-media">
                 <a href="https://github.com/Recr">
                     <img class="social-img" src="assets/images/github-icon.png" alt="GitHub Icon">
                 </a>

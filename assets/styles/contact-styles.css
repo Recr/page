@@ -116,12 +116,14 @@ form *, select * {
     text-transform: uppercase;
     font-weight: 600;
     color: #dbd9d4;
+    transition: 0.3s;
 }
 
 #btn:hover{
     cursor: pointer;
     background-color: #b6391a;
     color: #ffffff;
+    transition: 0.3s;
 }
 
 
