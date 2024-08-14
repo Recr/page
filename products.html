@@ -15,7 +15,6 @@
         <link rel="stylesheet" href="assets/styles/products-styles.css">
 
         <title>About Forth</title>
-        <script src="assets/scripts/xmlToJson.js"></script>
 </head>
 <body>
 
@@ -62,10 +61,57 @@
     <dialog id="modal">
         <img id="closeBtn" src="assets/images/close.png" alt="close button">
         <h1>Cart</h1>
-
+        <div id="inCart">
+            <div>
+                <img src="" alt="">
+                <span>Name</span>
+                <span>Total Value</span>
+            </div>
+        </div>
     </dialog>
 
     <script>
+        class Product {
+            constructor (type, id, name, value) {
+                this.code = type + id;
+                this.name = name;
+                this.value = value;
+                this.amount = 1;
+            }
+        }
+        function addProduct(type, id, name, value) {
+            let productExists = false;
+            for (let i = 0; i < localStorage.length; i++) {
+                var codename = localStorage.key(i);
+                let iteratedProduct = JSON.parse(localStorage.getItem(codename));
+                console.log(iteratedProduct.code)
+                if (iteratedProduct.code == type+id) {
+                    productExists = true;
+                    break;
+                }
+            }
+            if (productExists) {
+                let iteratedProduct = JSON.parse(localStorage.getItem(codename));
+                iteratedProduct.amount++;
+                localStorage.setItem(codename, JSON.stringify(iteratedProduct));
+            } else {
+                let newProduct = new Product(type, id, name, value);
+                localStorage.setItem(type + id, JSON.stringify(newProduct));
+            }
+                updateCart();
+        }
+
+        function updateCart() {
+            for(let i in localStorage.length){
+                if(document.getElementById(`${localStorage.key(i)}`)){
+                    
+                } else {
+                    document.createElement
+                }
+            }
+        }
+
+
         let btns = document.querySelectorAll(".product-type");
         
         btns.forEach(element => {
