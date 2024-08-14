@@ -320,13 +320,16 @@ footer > span{
 
     dialog {
         margin: auto;
-        width: 95%;
+        width: 98%;
         height: 95%;
         border: none;
         border-radius: 30px;
         transition: 0.5s;
     }
 
+    #checkout button {
+        margin-top: auto;
+    }
     .cartItem {
         padding: 0 0 0 15px;
         margin: 20px 0;
@@ -530,6 +533,8 @@ footer > span{
         width: 25vw;
         text-align: center;
     }
+
+
     
     .item-total {
         width: 15vw;
@@ -709,8 +714,6 @@ footer > span{
     .nav-item a {
         color: #4F3635;
     }
-
-
 
     #logo{
         width: 100%;

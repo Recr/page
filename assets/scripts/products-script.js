@@ -13,7 +13,6 @@ class Product {
     }
 }
 
-
 function addProduct(type, id, name, value) {
     let productExists = false;
     for (let i = 0; i < localStorage.length; i++) {
@@ -34,6 +33,24 @@ function addProduct(type, id, name, value) {
         localStorage.setItem(type + id, JSON.stringify(newProduct));
     }
         updateCart();
+}
+
+function decrementProduct(productCode) {
+    let product = JSON.parse(localStorage.getItem(productCode));
+    if (product.amount > 1) {
+        product.amount--;
+        localStorage.setItem(productCode, JSON.stringify(product));
+    } else {
+        localStorage.removeItem(productCode)
+    }
+    updateCart();
+}
+
+function incrementProduct(productCode) {
+    let product = JSON.parse(localStorage.getItem(productCode));
+    product.amount++;
+    localStorage.setItem(productCode, JSON.stringify(product));
+    updateCart();
 }
 
 function updateCart() {
@@ -59,6 +76,13 @@ function updateCart() {
 
             items = document.querySelectorAll(".item-name");
             items[i].innerHTML = currentItem.name;
+
+            //update code
+
+            items = document.querySelectorAll(".remove-item");
+            items[i].setAttribute("onclick", `decrementProduct('${currentItem.code}')`);
+            items = document.querySelectorAll(".add-item");
+            items[i].setAttribute("onclick", `incrementProduct('${currentItem.code}')`);
 
             //update amount
 
