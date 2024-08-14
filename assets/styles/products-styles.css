@@ -81,13 +81,6 @@ footer > span{
     cursor: pointer;
 }
 
-dialog {
-    margin: auto;
-    width: 1000px;
-    height: 800px;
-    border: none !important;
-}
-
 #product-selector {
     margin: 50px 0;
     display: flex;
@@ -241,6 +234,54 @@ dialog {
     background: #C95A3D;
     color: #fff;
   }
+
+dialog {
+    margin: auto;
+    width: 1000px;
+    height: 800px;
+    border: none !important;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+dialog:not(:hover) {
+    width: 0px;
+    height: 0px;
+}
+
+#closeBtn {
+    margin: 10px 0 0 10px;
+    width: 30px;
+    transition: 0.5s;
+    position: fixed;
+}
+
+#closeBtn:hover {
+    width: 40px;
+    cursor: pointer;
+}
+
+dialog > h1 {
+    margin: 50px auto;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.cartItem {
+    padding: 0 30px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+}
+
+.cartItem > img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
 
 
 /*Extra small devices*/
