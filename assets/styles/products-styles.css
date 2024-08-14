@@ -142,14 +142,14 @@ footer > span{
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
   }
 
-  i {
+  .add-button {
       background-image: url(../images/add-black.png);
       background-repeat: no-repeat;
       width: 30px;
       height: 30px;
       transition: 0.5s;
   }
-  i:hover {
+  .add-button:hover {
       background-image: url(../images/add-white.png);
   }
 
@@ -234,54 +234,25 @@ footer > span{
     background: #C95A3D;
     color: #fff;
   }
-
-dialog {
-    margin: auto;
-    width: 1000px;
-    height: 800px;
-    border: none !important;
-    border-radius: 30px;
-    transition: 0.5s;
-}
-dialog:not(:hover) {
-    width: 0px;
-    height: 0px;
-}
-
+  
 #closeBtn {
-    margin: 10px 0 0 10px;
-    width: 30px;
-    transition: 0.5s;
-    position: fixed;
-}
+      margin: 20px 0 0 15px;
+      width: 30px;
+      transition: 0.5s;
+      position: fixed;
+  }
 
-#closeBtn:hover {
-    width: 40px;
-    cursor: pointer;
-}
+  
+  #closeBtn:hover {
+      width: 40px;
+      cursor: pointer;
+  }
 
-dialog > h1 {
+  dialog > h1 {
     margin: 50px auto;
     text-align: center;
     margin-bottom: 30px;
 }
-
-.cartItem {
-    padding: 0 30px;
-    margin: 20px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: 500;
-}
-
-.cartItem > img {
-    height: 100px;
-    width: 100px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
 
 
 /*Extra small devices*/
@@ -345,6 +316,78 @@ dialog > h1 {
     #counter {
         top: 20px;
         height: 25px;
+    }
+
+    dialog {
+        margin: auto;
+        width: 95%;
+        height: 95%;
+        border: none;
+        border-radius: 30px;
+        transition: 0.5s;
+    }
+
+    .cartItem {
+        padding: 0 0 0 15px;
+        margin: 20px 0;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 15px;
+        align-items: center;
+        font-weight: 500;
+        font-size: 11px;
+    }
+    
+    .cartItem > img {
+        height: 80px;
+        width: 80px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-right: auto;
+    }
+    
+    .changeAmount a {
+        width: 22px;
+        height: 22px;
+    }
+    
+    .add-item {
+        background-image: url(../images/icons8-back-32.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 22px;
+        height: 22px;
+        display: inline-block;
+        rotate: 180deg;
+    }
+
+    .remove-item {
+        background-image: url(../images/icons8-back-32.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 22px;
+        height: 22px;
+        display: inline-block;
+    }
+    
+    .item-amount {
+        width: 18px;
+        text-align: center;
+    }
+    
+    .item-name {
+        width: 15vw;
+        text-align: center;
+    }
+    
+    .item-total {
+        width: 12vw;
+    }
+    
+    .changeAmount {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
 }
@@ -415,6 +458,83 @@ dialog > h1 {
         top: 20px;
         height: 25px;
     }
+
+    #closeBtn {
+        margin: 20px 0 0 20px;
+    }
+
+    dialog {
+        margin: auto;
+        width: 95%;
+        height: 95%;
+        border: none;
+        border-radius: 30px;
+        transition: 0.5s;
+    }
+
+    .cartItem {
+        padding: 0 20px;
+        margin: 20px 0;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 30px;
+        align-items: center;
+        font-weight: 500;
+        font-size: 18px;
+    }
+    
+    .cartItem > img {
+        height: 130px;
+        width: 130px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-right: auto;
+    }
+        
+    .changeAmount {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .changeAmount a {
+        width: 26px;
+        height: 26px;
+    }
+    
+    .add-item {
+        background-image: url(../images/icons8-back-32.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 26px;
+        height: 26px;
+        display: inline-block;
+        rotate: 180deg;
+    }
+
+    .remove-item {
+        background-image: url(../images/icons8-back-32.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 26px;
+        height: 26px;
+        display: inline-block;
+    }
+    
+    .item-amount {
+        width: 20px;
+        text-align: center;
+    }
+    
+    .item-name {
+        width: 25vw;
+        text-align: center;
+    }
+    
+    .item-total {
+        width: 15vw;
+        text-align: center;
+    }
 }
 
 /*Medium devices*/
@@ -472,6 +592,80 @@ dialog > h1 {
         top: 20px;
         height: 25px;
     }
+
+    dialog {
+        margin: auto;
+        width: 80%;
+        height: 95%;
+        border: none;
+        border-radius: 30px;
+        transition: 0.5s;
+    }
+
+    .cartItem {
+        padding: 0 20px;
+        margin: 20px 0;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 30px;
+        align-items: center;
+        font-weight: 500;
+        font-size: 18px;
+    }
+    
+    .cartItem > img {
+        height: 150px;
+        width: 150px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-right: auto;
+    }
+        
+    .changeAmount {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .changeAmount a {
+        width: 26px;
+        height: 26px;
+    }
+    
+    .add-item {
+        background-image: url(../images/icons8-back-32.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 26px;
+        height: 26px;
+        display: inline-block;
+        rotate: 180deg;
+    }
+
+    .remove-item {
+        background-image: url(../images/icons8-back-32.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 26px;
+        height: 26px;
+        display: inline-block;
+    }
+    
+    .item-amount {
+        width: 20px;
+        text-align: center;
+    }
+    
+    .item-name {
+        width: 25vw;
+        text-align: center;
+    }
+    
+    .item-total {
+        width: 15vw;
+        text-align: center;
+    }
+
 }
 
 /*Large devices*/
@@ -530,6 +724,15 @@ dialog > h1 {
     #counter {
         top: 10px;
         height: 25px;
+    }
+
+    dialog {
+        margin: auto;
+        width: 70%;
+        height: 95%;
+        border: none;
+        border-radius: 30px;
+        transition: 0.5s;
     }
 }
 
