@@ -116,12 +116,14 @@ form *, select * {
     text-transform: uppercase;
     font-weight: 600;
     color: #dbd9d4;
+    transition: 0.3s;
 }
 
 #btn:hover{
     cursor: pointer;
     background-color: #b6391a;
     color: #ffffff;
+    transition: 0.3s;
 }
 
 
@@ -149,6 +151,7 @@ form *, select * {
     }
 
     #navbar {
+        min-height: 300px;
         height: 50%;
         padding-top: 70px;
         position: fixed;
@@ -166,10 +169,6 @@ form *, select * {
         display: flex;
         justify-content: center;
         margin: 20px;
-    }
-
-    .invisible {
-        display: none;
     }
 
     #logo{
@@ -226,8 +225,6 @@ form *, select * {
         font-size: 20px;
     }
 
-
-
 }
 
 /*Small devices*/
@@ -252,6 +249,7 @@ form *, select * {
     }
 
     #navbar {
+        min-height: 360px;
         height: 60%;
         padding-top: 70px;
         position: fixed;
@@ -266,7 +264,7 @@ form *, select * {
     .nav-item {
         display: flex;
         justify-content: center;
-        margin: 80px 20px;
+        margin: 40px 20px;
         font-size: 18px;
     }
 
@@ -352,6 +350,7 @@ form *, select * {
     }
 
     #navbar {
+        min-height: 400px;
         height: 60%;
         width: 30%;
         padding-top: 70px;
@@ -365,7 +364,7 @@ form *, select * {
     .nav-item {
         display: flex;
         justify-content: center;
-        margin: 80px 20px;
+        margin: 40px 20px;
         font-size: 28px;
     }
 
@@ -437,7 +436,8 @@ form *, select * {
     }
 
     #navbar {
-        height: 10;
+        min-height: auto;
+        height: 100px;
         width: 100%;
         padding-top: 0;
         position: relative;

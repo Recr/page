@@ -15,36 +15,53 @@
         <link rel="stylesheet" href="assets/styles/products-styles.css">
 
         <title>About Forth</title>
-    
 </head>
 <body>
     <div id="menu" onclick="changeIcon()"></div>
-        
-        <nav id="navbar" class="invisible">
-                <a href="index.html">
-                    <img id="nav-logo-img" src="assets/images/logo.png" alt="logo">
-                </a>
-                <ul>
-                    <li class="nav-item invisible">
-                        <a href="about.html">About</a>
-                    </li>
-                    <li class="nav-item invisible">
-                        <a href="products.html">Products</a>
-                    </li>
-                    <li class="nav-item invisible">
-                        <a href="contact.html">Contact</a>
-                    </li>
-                </ul>
-        </nav>
+    
+    <nav id="navbar" class="invisible">
+        <a href="index.html">
+            <img id="nav-logo-img" src="assets/images/logo.png" alt="logo">
+        </a>
+        <ul>
+            <li id="bag" class="nav-item invisible">
+                <img src="assets/images/shopping-bag-48.png" alt="">
+                <span id="counter">0</span>
+            </li>
+            <li class="nav-item invisible">
+                <a href="about.html">About</a>
+            </li>
+            <li class="nav-item invisible">
+                <a href="products.html">Products</a>
+            </li>
+            <li class="nav-item invisible">
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <div>
+        <a href="index.html">
+            <img id="logo" src="assets/images/logo.png" alt="logo">
+        </a>
+    </div>
+    
+    <div id="product-selector">
+        <button id="casual" class="product-type">Casual</button>
+        <button id="social" class="product-type">Social</button>
+        <button id="stylish" class="product-type">Stylish</button>
+    </div>
+    
+    <div id="container"></div>
 
-        <div>
-            <a href="index.html">
-                <img id="logo" src="assets/images/logo.png" alt="logo">
-            </a>
-        </div>
+    <dialog id="modal">
+        <img id="closeBtn" src="assets/images/close.png" alt="close button">
+        <h1>Cart</h1>
+        <div id="inCart"></div>
+    </dialog>
         <footer>
             <span>Developed by Eliel Silva</span>
-            <div id="social">
+            <div id="social-media">
                 <a href="https://github.com/Recr">
                     <img class="social-img" src="assets/images/github-icon.png" alt="GitHub Icon">
                 </a>
@@ -55,5 +72,6 @@
             <span>Navbar icons by <a target="_blank" href="https://icons8.com">Icons8</a></span>
         </footer>
         <script src="assets/scripts/index-script.js"></script>
+        <script src="assets/scripts/products-script.js"></script>
 </body>
 </html>

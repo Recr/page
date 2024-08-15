@@ -139,6 +139,7 @@ footer > span{
     }
 
     #navbar {
+        min-height: 300px;
         height: 50%;
         padding-top: 70px;
         position: fixed;
@@ -212,6 +213,7 @@ footer > span{
     }
 
     #navbar {
+        min-height: 360px;
         height: 60%;
         padding-top: 70px;
         position: fixed;
@@ -220,13 +222,15 @@ footer > span{
         border-radius: 0 10px 10px 0;
         z-index: 1;
     }
+    
     #nav-logo-img {
         display: none;
     }
+
     .nav-item {
         display: flex;
         justify-content: center;
-        margin: 80px 20px;
+        margin: 40px 20px;
         font-size: 18px;
     }
 
@@ -284,6 +288,7 @@ footer > span{
     }
 
     #navbar {
+        min-height: 400px;
         height: 60%;
         width: 30%;
         padding-top: 70px;
@@ -297,7 +302,7 @@ footer > span{
     .nav-item {
         display: flex;
         justify-content: center;
-        margin: 80px 20px;
+        margin: 40px 20px;
         font-size: 28px;
     }
 
@@ -342,7 +347,8 @@ footer > span{
     }
 
     #navbar {
-        height: 10;
+        min-height: auto;
+        height: 100px;
         width: 100%;
         padding-top: 0;
         position: relative;
