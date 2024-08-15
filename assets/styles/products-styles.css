@@ -124,6 +124,7 @@ footer > span{
     color: #fff;
     border-radius: 12px;
     width: 25px;
+    height: 25px;
     position: relative;
     right: 20px;
     top: 10px;
@@ -277,6 +278,7 @@ footer > span{
     }
 
     #navbar {
+        min-height: 300px;
         height: 50%;
         padding-top: 70px;
         position: fixed;
@@ -294,6 +296,11 @@ footer > span{
         display: flex;
         justify-content: center;
         margin: 20px;
+    }
+
+    #bag {
+        position: relative;
+        left: 10px;
     }
 
     .invisible {
@@ -315,7 +322,6 @@ footer > span{
 
     #counter {
         top: 20px;
-        height: 25px;
     }
 
     dialog {
@@ -417,6 +423,7 @@ footer > span{
     }
 
     #navbar {
+        min-height: 360px;
         height: 60%;
         padding-top: 70px;
         position: fixed;
@@ -431,8 +438,13 @@ footer > span{
     .nav-item {
         display: flex;
         justify-content: center;
-        margin: 80px 20px;
+        margin: 40px 20px;
         font-size: 18px;
+    }
+
+    #bag {
+        position: relative;
+        left: 10px;
     }
 
     .invisible {
@@ -534,8 +546,6 @@ footer > span{
         text-align: center;
     }
 
-
-    
     .item-total {
         width: 15vw;
         text-align: center;
@@ -564,6 +574,7 @@ footer > span{
     }
 
     #navbar {
+        min-height: 400px;
         height: 60%;
         width: 30%;
         padding-top: 70px;
@@ -577,8 +588,8 @@ footer > span{
     .nav-item {
         display: flex;
         justify-content: center;
-        margin: 80px 20px;
-        font-size: 28px;
+        margin: 40px 20px;
+        font-size: 22px;
     }
 
     .invisible {
@@ -680,6 +691,7 @@ footer > span{
     }
 
     #navbar {
+        min-height: auto;
         height: 100px;
         width: 100%;
         padding-top: 0;
@@ -705,6 +717,8 @@ footer > span{
         font-size: 28px;
         height: 48px;
     }
+
+
 
     ul {
         display: flex;
